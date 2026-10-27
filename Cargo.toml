@@ -1,0 +1,12 @@
+[package]
+name = "pix-code"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+crc16 = "0.4.0"
+image = "0.25.10"
+qrcode = "0.14.1"
+serde = { version = "1.0.229", features = ["derive"] }
+teloxide = { version = "0.17.0", features = ["bincode-serializer", "macros", "sqlite-storage-nativetls"] }
+tokio = { version = "1.54.1", features = ["full"] }
